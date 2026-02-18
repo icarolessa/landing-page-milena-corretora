@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100;
+    gap: 100px;
     background-color: #081418;
     color: #fff;
 
@@ -96,4 +96,43 @@
 .banner__button:hover {
     background: linear-gradient(135deg, #FFFA8A 0%, #ECC440 50%, #FFFA8A 100%);
     
+}
+
+.biography {
+    background-color: #000;
+    color: #fff;
+}
+
+.biography__content {
+    flex: 1;
+    gap: 100;
+    max-width: 600px;  
+}
+
+.biography__title {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.biography__text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.biography--highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFA8A;
+}
+
+.biography__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-right: 100px;
 }
