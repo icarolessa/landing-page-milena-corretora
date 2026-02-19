@@ -10,7 +10,6 @@
     
     width: 1300px;
     margin: 0 auto;
-    gap: 100px
 }
 
 .top-bar {
@@ -36,6 +35,10 @@
     background-color: #081418;
     color: #fff;
     padding: 120px 0;
+}
+
+.banner__wrapper {
+    gap: 100px;
 }
 
 .banner__content {
@@ -96,13 +99,16 @@
     background: linear-gradient(135deg, #FFFA8A 0%, #ECC440 50%, #FFFA8A 100%);
 }
 
+/* SEÇÃO BIOGRAPHY */
+
 .biography {
     background-color: #000;
     color: #fff;
     padding: 60px 0 60px 0;
 }
 
-.biography .container {
+.biography__wrapper {
+    padding: 60px 0;
     flex-direction: row-reverse;
     gap: 100px;
 }
@@ -144,3 +150,70 @@
     /* margin-top: 60px; */
 }
 
+/* SEÇÃO REVIEWS */
+
+.reviews {
+    background-color: #081418;
+    padding: 100px 0;
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+
+.review__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+}
+
+.review__title--highlight {
+    color: #FFFA8A;
+    font-weight: 700;
+}
+
+.review__grid {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.review-card {
+    max-width: 190px;
+    background-color: #16252b;
+    padding: 30px 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,250, 138, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    border-color: #FFFA8A;
+}
+
+.review-card__text {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.review-card__author {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #FFFA8A;
+    padding-bottom: 2px;
+}
+
+.review-card__location {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #acacac;
+    font-style: italic;
+}
